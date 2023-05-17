@@ -1,6 +1,12 @@
 # soccial-react
 
-A tiny interview project made with react, vite and turborepo, done in 3 hours.
+A tiny interview project made with react, vite and turborepo.
+
+The goal of this project was to make the React app in a 3 hours span, so I have configured a few things before:
+- The monorepo with turborepo and yarn workspaces.
+- The tooling like eslint, prettier, stylelint.
+- The packages that I'd use in the project.
+- The API has been provided by the company, I didn't touch much its code.
 
 ## **The solution**
 
@@ -23,7 +29,7 @@ This makes the project really scalable and future ready.
 3. The stack that I used:
 
    - vite - a build tool and development server for modern web applications.
-   - typescript - The main language used
+   - typescript - The main language I used
    - react - The one we love :)
    - react-router - For navigation between pages
    - react-query - Data fetching and caching library for React applications
@@ -38,10 +44,10 @@ This makes the project really scalable and future ready.
    - I did implement a storage service that abstracts away the `localStorage` (facade)
    - I'm doing the same with `date-fns`, so that we never use it directly in code
    - There is a `config` that exposes environment variables, so that we don't use vite imports around.
-   - I did create an entity adapter with the purpose of transforming rest data in entity data (in the format of `Record<number, TEntity>`) similarly to how the redux toolkit entity adapter does. That way I provide a mechanism that allows entities to be looked up by their ids, as that optimizes lookup performance (instead of a filter or find). Eg.: users[userId], as simple as that :)
-   - The authentication has been done in a combination of an authentication service along with React context and provider (exposed by a hook). When the user signs in the app requests from the API and on success they're saved to the local storage. Next time the app is opened, that user will be restored from the local storage (no need to login again).
-   - Automatic refetching: Once you send a message using the `usePostMutation` it invalidates the `posts` key, therefore making posts to be refetched automatically.
-   - The app has been divided into features, being `posts`, `birthdays` and `auth`, therefore there's a strong and scalable structure in place.
+   - I did create an entity adapter with the purpose of transforming rest data in entity data (in the format of `Record<number, TEntity>`) similarly to how the redux toolkit entity adapter does. That way I provide a mechanism that allows entities to be looked up by their ids, as that optimizes lookup performance (instead of a filter or find). Eg.: `users[userId]`, as simple as that :)
+   - The authentication has been done in a combination of an authentication service along with React context and provider (exposed by a hook), it is a username only login - so it has no professional use. When the user signs in the app requests from the API and on success they're saved to the local storage. Next time the app is opened, that user will be restored from the local storage (no need to login again).
+   - Automatic refetching: Once you send a message using the `usePostMutation` it invalidates the `posts` key, that makes posts to be refetched automatically.
+   - The app has been divided into features, being `posts`, `birthdays` and `auth`, so there's a strong and scalable structure in place.
    - A few totally reusable components, like `Button`, `Card` and `Link`.
    - It's all implemented with FP and fully typed with typescript :)
 
