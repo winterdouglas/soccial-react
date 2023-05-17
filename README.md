@@ -6,14 +6,14 @@ The goal of this project was to make the React app in a 3 hours span, so I have 
 - The monorepo with turborepo and yarn workspaces.
 - The tooling like eslint, prettier, stylelint.
 - The packages that I'd use in the project.
-- The API has been provided by the company, I didn't touch much its code.
+- The API has been provided by the company, I didn't touch much of its code.
 
 ## The main requirements
 
 - Login (username based)
 - Listing groups and respective posts ordered by time
 - Who's having birthday today
-- The day of the week the logged in user has birthday, for the last, this and next year
+- The day of the week that the logged in user have birthday previous, this and next year
 - CRUD (bonus)
 - Creative UI/UX (bonus)
 
@@ -35,7 +35,7 @@ The goal of this project was to make the React app in a 3 hours span, so I have 
 The main idea around it is to make it possible to share code between the projects, especially if a React Native app comes in to the game, therefore it is easier to share some aspects, like helpers, theming, the auth portion and the API client + hooks, to list a few, so that the apps are consistent and maintainable.
 This makes the project really scalable and future ready.
 
-3. The stack that I used:
+3. The stack/tooling that I used:
 
    - vite - a build tool and development server for modern web applications.
    - typescript - The main language I used
