@@ -1,0 +1,42 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "compile": "turbo run compile",
+    "build": "turbo run build",
+    "api": "turbo run api",
+    "web": "turbo run web",
+    "start": "concurrently \"yarn api\" \"yarn web\"",
+    "preview": "turbo run preview",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "lint": "eslint --ignore-path .gitignore . && turbo run lint",
+    "lint:css": "stylelint \"apps/**/*.{css,ts,tsx}\"",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "postinstall": "manypkg check"
+  },
+  "dependencies": {
+    "@manypkg/cli": "latest",
+    "concurrently": "^8.0.1",
+    "eslint": "^8.38.0",
+    "eslint-config-react": "workspace:^",
+    "postcss-styled-syntax": "^0.4.0",
+    "prettier": "^2.8.7",
+    "stylelint": "^15.6.0",
+    "stylelint-config-standard": "^33.0.0",
+    "tsconfig": "workspace:^",
+    "turbo": "latest"
+  },
+  "packageManager": "yarn@3.5.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "resolutions": {
+    "styled-components": "^5"
+  },
+  "manypkg": {
+    "ignoredRules": [
+      "INTERNAL_MISMATCH"
+    ]
+  }
+}

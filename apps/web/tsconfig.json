@@ -1,0 +1,16 @@
+{
+  "extends": "tsconfig/react.json",
+  "include": ["src", "vite.config.ts"],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "plugins": [
+      {
+        "name": "@styled/typescript-styled-plugin",
+        "tags": ["styled", "css", "onDesktop"]
+      }
+    ]
+  }
+}

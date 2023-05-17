@@ -1,0 +1,69 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "A post in Group C",
+      "group": 3,
+      "creatorId": 3,
+      "createdAt": "2020-01-01T13:09:05.132Z"
+    },
+    {
+      "id": 2,
+      "title": "A post in Group A",
+      "group": 1,
+      "creatorId": 1,
+      "createdAt": "2020-01-20T13:09:05.132Z"
+    },
+    {
+      "id": 3,
+      "title": "A post in Group A",
+      "group": 1,
+      "creatorId": 2,
+      "createdAt": "2020-01-27T13:09:05.132Z"
+    },
+    {
+      "id": 4,
+      "title": "A post in Group B",
+      "group": 2,
+      "creatorId": 1,
+      "createdAt": "2020-01-12T13:09:05.132Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "user1",
+      "birthday": "21-03"
+    },
+    {
+      "id": 2,
+      "name": "user2",
+      "birthday": "21-12"
+    },
+    {
+      "id": 3,
+      "name": "user3",
+      "birthday": "20-02"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "Group A",
+      "admins": [1, 2],
+      "members": [1, 2, 3]
+    },
+    {
+      "id": 2,
+      "name": "Group B",
+      "admins": [1],
+      "members": [1, 2]
+    },
+    {
+      "id": 3,
+      "name": "Group C",
+      "admins": [3],
+      "members": [1, 2, 3]
+    }
+  ]
+}
