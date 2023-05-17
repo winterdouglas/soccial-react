@@ -8,7 +8,16 @@ The goal of this project was to make the React app in a 3 hours span, so I have 
 - The packages that I'd use in the project.
 - The API has been provided by the company, I didn't touch much its code.
 
-## **The solution**
+## The main requirements
+
+- Login (username based)
+- Listing groups and respective posts ordered by time
+- Who's having birthday today
+- The day of the week the logged in user has birthday, for the last, this and next year
+- CRUD (bonus)
+- Creative UI/UX (bonus)
+
+## The solution
 
 1. The project has been implemented using a `monorepo` with turborepo and yarn workspaces
 2. It has been structured as follows:
@@ -51,7 +60,7 @@ This makes the project really scalable and future ready.
    - A few totally reusable components, like `Button`, `Card` and `Link`.
    - It's all implemented with FP and fully typed with typescript :)
 
-**Running**
+## Running
 
 `yarn && yarn start`
 
