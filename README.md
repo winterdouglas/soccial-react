@@ -1,4 +1,8 @@
-# **The solution**
+# soccial-react
+
+A tiny interview project made with react, vite and turborepo, done in 3 hours.
+
+## **The solution**
 
 1. The project has been implemented using a `monorepo` with turborepo and yarn workspaces
 2. It has been structured as follows:
