@@ -7,6 +7,8 @@ The goal of this project was to make the React app in a 3 hours span, so I have 
 - The tooling like eslint, prettier, stylelint.
 - The packages that I'd use in the project.
 - The API has been provided by the company, I didn't touch much of its code.
+- The absolute imports
+- The theme variables
 
 ## The main requirements
 
